@@ -1,7 +1,5 @@
-/* styles.css */
-
-/* Reset some default styles */
-body, h1, p {
+/* Reset default styles */
+body, h1, p, table {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +13,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #009879;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -27,17 +25,48 @@ header h1 {
 }
 
 main {
-    margin: 20px 0;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start; /* Aligns main content to the left */
 }
 
 footer {
-    background: #333;
+    background: #009879;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    border: 1px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 0; /* Adjusted to align left */
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
 }
 
 button {
