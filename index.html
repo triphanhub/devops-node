@@ -1,20 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+
+	<title>MapLife DevOps Page</title>
+	 <!-- add icon link -->
+	 <link rel="icon" href=
+	 "https://www.crn.com/news/managed-services/media_103150fde12e1128f1d2d82aad0e01f1344a996e2.png?width=2000&format=webply&optimize=medium"
+			   type="image/x-icon">
+	<style>
+		.styled-table {
+			border-collapse: collapse;
+			margin: 25px 0;
+			font-size: 0.9em;
+			font-family: sans-serif;
+			border: 1px solid black;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.styled-table thead tr {
+			background-color: #009879;
+			color: #ffffff;
+			text-align: center;
+			padding: 12px 15px
+		}
+		.styled-table th {
+			background-color: #009879;
+			color: #ffffff;
+			text-align: center;
+			border: 1px solid black;			
+			padding: 12px 15px
+		}
+		.styled-table td {
+			padding: 12px 15px;
+			border: 1px solid black;
+		}
+		.styled-table tbody tr {
+			border-bottom: 1px solid #dddddd;
+		}
+
+		.styled-table tbody tr:nth-of-type(even) {
+			background-color: #f3f3f3;
+		}
+
+		.styled-table tbody tr:last-of-type {
+			border-bottom: 2px solid #009879;
+		}
+		.styled-table tbody tr.active-row {
+			font-weight: bold;
+			color: #009879;
+		}
+		hr {
+			background-color: #009879	; height: 5px;
+		}
+		h1, h3 {
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>This is my first GitHub Pages website!</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+	<hr><h3>Server information || for DevOps only, not for share</h3></hr>
+	<table class="styled-table">
+		<thead>
+			<tr>
+				<th colspan="2">Component</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td><b>Branch Code MAP Life</b></td>
+				<td>
+					<p>- <b><u>Branch Code</u></b>: <a href="https://dxcportal.sharepoint.com/:x:/r/sites/MAPLifeVietnam/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bacf70aa2-162a-415a-a0db-2e8d04f6c84b%7D&wdOrigin=TEAMS-ELECTRON.teamsSdk_ns.bim&wdExp=TEAMS-CONTROL&wdhostclicktime=1704767635889&web=1">https://dxcportal.sharepoint.com/:x:/r/sites/MAPLifeVietnam/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bacf70aa2-162a-415a-a0db-2e8d04f6c84b%7D&wdOrigin=TEAMS-ELECTRON.teamsSdk_ns.bim&wdExp=TEAMS-CONTROL&wdhostclicktime=1704767635889&web=1</a><br></p>					
+					<p>- <b><u>Branch Code Sheet</u></b>: <a href="https://docs.google.com/spreadsheets/d/1OgObIIoe_rMeh-SOxaYVxyKKVHigKPzk-bCNWMvHQVE/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1OgObIIoe_rMeh-SOxaYVxyKKVHigKPzk-bCNWMvHQVE/edit?usp=sharing</a><br></p>	
+				</td> 
+			</td>
+			<tr>
+				<td><b>Jenkins</b></td>
+				<td>
+					<p>- <b><u>IJ ( dnguyen203 / dnguyen203@ )</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/jenkins/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/jenkins/</a><br></p>
+					<p>- <b><u>IFE (no login info)</u></b>: <a href="https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/jenkins/">https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/jenkins/</a><br></p>				
+					<p>- <b><u>New Jenkins( admin / 121212 ) </u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/</a><br></p>				
+				</td> 
+			</td>
+			<tr>
+				<td><b>IFE(SIT)</b></td>
+                <td>
+					<p>- <b><u>Jenkins</b></u>: <a href="https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/jenkins/">https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/jenkins/</a><br></p>
+					<p>- <b><u>ChangeBranch</b></u>: <a href="https://github.dxc.com/MAP-Life/vni-standard-scripts/">https://github.dxc.com/MAP-Life/vni-standard-scripts/</a><br></p>
+					
+					<p>- <b><u>ChangeBranch with Groovy</b></u>: <a href="https://github.dxc.com/MAP-Life/vni-standard-scripts/blob/MAPLIFE-IFE-SIT-V2/pipeline/env.groovy">https://github.dxc.com/MAP-Life/vni-standard-scripts/blob/MAPLIFE-IFE-SIT-V2/pipeline/env.groovy</a><br></p>
+					
+					<p>- <b><u>ChangeConf</b></u>: <a href="https://github.dxc.com/MAP-Life/vni-standard-config/">https://github.dxc.com/MAP-Life/vni-standard-config/</a><br></p>
+					<p>- <b><u>Download</b></u>: <a href="https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/ES-package/">https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/ES-package/</a><br></p>
+				</td>
+			</td>
+			<tr>
+				<td><b>Amazon Web Service (AWS)</b></td>
+				<td>
+					<p>- <b><u>MAP AWS ( tringoc.phan2@dxc.com | Sa@s314159&271828DXC )</u></b>: <a href="https://dxc-aws-spp-maplife-app-dev.signin.aws.amazon.com/console">https://dxc-aws-spp-maplife-app-dev.signin.aws.amazon.com/console</a><br></p>					
+					<p> AWS password change after 90 days</p>
+				</td> 
+			</td>
+			<tr>
+				<td><b>Online DB access</b></td>
+				<td>
+					<p>- <b><u>DB(user_read / P@ssword123 )</b></u>: <a href="http://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/dbwebclient/adminer.php?oracle=10.107.0.26%3A1521%2FMAPSIT&username=user_read&db=MAPSIT&ns=VM1DTA&sql=">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/dbwebclient/adminer.php?oracle=10.107.0.26%3A1521%2FMAPSIT&username=user_read&db=MAPSIT&ns=VM1DTA&sql=</a><br></p>
+				</td> 
+			</td>
+			
+			<tr>
+				<td><b>FT1(SIT)</b></td>
+				<td>
+					<p>- <b><u>Admin</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/LifeAsiaWeb/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/LifeAsiaWeb/</a><br></p>
+					<p>- <b><u>WebServices</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/lifewebservices/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/lifewebservices/</a><br></p>
+					<p>- <b><u>ITS</b></u>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/IntegralTableServices/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/IntegralTableServices/</a><br></p>
+					<p>- <b><u>Reports</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/integral/reports/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/integral/reports/</a><br></p>
+					<p>- <b><u>SOS</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/joc/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/joc/</a><br></p>
+					<p>- <b><u>Glowroot</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/glowroot/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/glowroot/</a><br></p>
+				</td> 
+			</td>
+			<tr>	
+				<td><b>FT2(AMS)</b></td>
+                <td>
+					<p>- <b><u>Admin</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/ams/LifeAsiaWeb/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/ams/LifeAsiaWeb/</a><br></p>
+					<p>- <b><u>WebServices</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/ams/lifewebservices/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/ams/lifewebservices/</a><br></p>
+					<p>- <b><u>Reports</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/ams/reports/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/ams/reports/</a><br></p>
+				</td>
+			</td>
+			<tr>	
+				<td><b>FT3(DM)</b></td>
+                <td>
+					<p>- <b><u>Admin</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/DM/LifeAsiaWeb/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/DM/LifeAsiaWeb/</a><br></p>
+					<p>- <b><u>WebServices</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/DM/lifewebservices/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/DM/lifewebservices/</a><br></p>
+					<p>- <b><u>Reports</u></b>: <a href="https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/DM/reports/">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/DM/reports/</a><br></p>
+				</td>
+			</td><tr>	
+				<td><b>UAT</b></td>
+                <td>
+					<p>- <b><u>Admin</b></u>: <a href="http://10.1.15.33:19090/LifeAsiaWeb/">http://10.1.15.33:19090/LifeAsiaWeb/</a><br></p>
+					<p>- <b><u>WebServices</b></u>: <a href="http://10.1.15.34:19090/lifewebservices/">http://10.1.15.34:19090/lifewebservices/</a><br></p>
+					<p>- <b><u>Reports</b></u>: <a href="http://10.1.15.33:8080/integral/reports/">http://10.1.15.33:8080/integral/reports/</a><br></p>
+				</td>
+			</td><tr>	
+				<td><b>UAT(DM)</b></td>
+                <td>
+					<p>- <b><u>Admin</b></u>: <a href="http://10.1.15.48:19090/DM/LifeAsiaWeb/">http://10.1.15.48:19090/DM/LifeAsiaWeb/</a><br></p>
+					<p>- <b><u>Reports</b></u>: <a href="http://10.1.15.48:8080/integral/reports/">http://10.1.15.48:8080/integral/reports/</a><br></p>
+				</td>
+			</td><tr>	
+				<td><b>UAT2(DM)</b></td>
+                <td>
+					<p>- <b><u>Admin</b></u>: <a href="https://10.1.18.135:19090/LifeAsiaWeb/">https://10.1.18.135:19090/LifeAsiaWeb/</a><br></p>
+					<p>- <b><u>WebServices</b></u>: <a href="http://10.1.18.136:19090/lifewebservices/">http://10.1.18.136:19090/lifewebservices/</a><br></p>
+					<p>- <b><u>Reports</b></u>: <a href="http://10.1.18.135/integral/report/logs/">http://10.1.18.135/integral/report/logs/</a><br></p>
+				</td>
+			</td><tr>	
+				<td><b>PREPRD</b></td>
+                <td>
+					<p>- <b><u>Admin</b></u>: <a href="https://pre-il.map-life.com.vn/LifeAsiaWeb/">https://pre-il.map-life.com.vn/LifeAsiaWeb/</a><br></p>
+					<p>- <b><u>WebServices</b></u>: <a href="https://pre-ipe.map-life.com.vn/lifewebservices">https://pre-ipe.map-life.com.vn/lifewebservices</a><br></p>
+					<p>- <b><u>Reports</b></u>: <a href="\\10.1.15.140\reports">\\10.1.15.140\reports</a><br></p>
+				</td>
+			<tr>
+				<td><b>IFE(SIT)</b></td>
+                <td>
+					<p>- <b><u>Jenkins</b></u>: <a href="https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/jenkins/">https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/jenkins/</a><br></p>
+					<p>- <b><u>ChangeBranch</b></u>: <a href="https://github.dxc.com/MAP-Life/vni-standard-scripts/">https://github.dxc.com/MAP-Life/vni-standard-scripts/</a><br></p>
+					<p>- <b><u>ChangeConf</b></u>: <a href="https://github.dxc.com/MAP-Life/vni-standard-config/">https://github.dxc.com/MAP-Life/vni-standard-config/</a><br></p>
+					<p>- <b><u>Download</b></u>: <a href="https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/ES-package/">https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/ES-package/</a><br></p>
+				</td>
+			</td>
+			<tr>
+				<td><b>IFE env</b></td>
+                <td>
+					<p>- <b><u>IFE SIT (ttran322 / 123123)</b></u>: <a href="https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/ife-infra-oauth2/login">https://ec2-54-255-93-42.ap-southeast-1.compute.amazonaws.com/ife-infra-oauth2/login</a><br></p>
+					<p>- <b><u>IFE UAT (ttran322ap2 / 123123)</b></u>: <a href="https://maplife-uat-10-1-15-41.sslip.io/AgencySales/quotations/ag">https://maplife-uat-10-1-15-41.sslip.io/AgencySales/quotations/ag</a><br></p>
+					<p>- <b><u>IFE PREPROD (ttran322ap2 / 123123)</b></u>: <a href="https://pre-agency.map-life.com.vn/ife-infra-oauth2/login">https://pre-agency.map-life.com.vn/ife-infra-oauth2/login</a><br></p>
+				</td>
+			</td>
+			<tr>
+				<td><b>NOTE</b></td>
+                <td>
+					<p>- <b><u>DB(user_read / P@ssword123)</b></u>: <a href="http://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/dbwebclient/adminer.php?oracle=10.107.0.26%3A1521%2FMAPSIT&username=user_read&db=MAPSIT&ns=VM1DTA&sql=">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/dbwebclient/adminer.php?oracle=10.107.0.26%3A1521%2FMAPSIT&username=user_read&db=MAPSIT&ns=VM1DTA&sql=</a><br></p>
+				</td>
+			</td>
+		</tbody>
 </body>
+<footer>
+</footer>
 </html>
