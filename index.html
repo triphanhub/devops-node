@@ -1,71 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-	<title>MapLife DevOps Page</title>
-	 <!-- add icon link -->
-	 <link rel="icon" href=
-	 "https://www.crn.com/news/managed-services/media_103150fde12e1128f1d2d82aad0e01f1344a996e2.png?width=2000&format=webply&optimize=medium"
-			   type="image/x-icon">
-	<style>
-		.styled-table {
-			border-collapse: collapse;
-			margin: 25px 0;
-			font-size: 0.9em;
-			font-family: sans-serif;
-			border: 1px solid black;
-			box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.styled-table thead tr {
-			background-color: #009879;
-			color: #ffffff;
-			text-align: center;
-			padding: 12px 15px
-		}
-		.styled-table th {
-			background-color: #009879;
-			color: #ffffff;
-			text-align: center;
-			border: 1px solid black;			
-			padding: 12px 15px
-		}
-		.styled-table td {
-			padding: 12px 15px;
-			border: 1px solid black;
-		}
-		.styled-table tbody tr {
-			border-bottom: 1px solid #dddddd;
-		}
-
-		.styled-table tbody tr:nth-of-type(even) {
-			background-color: #f3f3f3;
-		}
-
-		.styled-table tbody tr:last-of-type {
-			border-bottom: 2px solid #009879;
-		}
-		.styled-table tbody tr.active-row {
-			font-weight: bold;
-			color: #009879;
-		}
-		hr {
-			background-color: #009879	; height: 5px;
-		}
-		h1, h3 {
-			text-align: center;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapLife DevOps Page</title>
+    <link rel="icon" href="https://www.crn.com/news/managed-services/media_103150fde12e1128f1d2d82aad0e01f1344a996e2.png?width=2000&format=webply&optimize=medium" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<hr><h3>Server information || for DevOps only, not for share</h3></hr>
-	<table class="styled-table">
-		<thead>
-			<tr>
-				<th colspan="2">Component</th>
-			</tr>
-		</thead>
-		
+    <header>
+        <h1>Server Information for DevOps</h1>
+    </header>
+    <main>
+        <div class="table-container">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Component</th>
+                    </tr>
+                </thead>
 		<tbody>
 			<tr>
 				<td><b>Branch Code MAP Life</b></td>
@@ -184,8 +137,12 @@
 					<p>- <b><u>DB(user_read / P@ssword123)</b></u>: <a href="http://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/dbwebclient/adminer.php?oracle=10.107.0.26%3A1521%2FMAPSIT&username=user_read&db=MAPSIT&ns=VM1DTA&sql=">https://maplife-sit-1219531613.ap-southeast-1.elb.amazonaws.com/dbwebclient/adminer.php?oracle=10.107.0.26%3A1521%2FMAPSIT&username=user_read&db=MAPSIT&ns=VM1DTA&sql=</a><br></p>
 				</td>
 			</td>
-		</tbody>
-</body>
+        </table>
+    </div>
+</main>
 <footer>
+    &copy; 2024 MapLife DevOps
 </footer>
+<script src="script.js"></script>
+</body>
 </html>
